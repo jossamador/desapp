@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie Fibonacci</title>
+    <style>
+        #graphContainer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .bar {
+            width: 10px;
+            margin-right: 2px;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generar Serie Fibonacci</h1>
+    <input type="number" id="numberInput" placeholder="Cantidad de números" min="1" max="100">
+    <button id="generateButton">Generar</button>
+
+    <div>
+        <h3>Resultado:</h3>
+        <p id="result"></p>
+    </div>
+
+    <div>
+        <h3>Gráfico:</h3>
+        <div id="graphContainer"></div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript compilado desde TypeScript -->
+    <script type="module" src="../js/index.js"></script>
+</body>
+</html>

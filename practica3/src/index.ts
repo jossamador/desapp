@@ -53,4 +53,3 @@ vengador = 'Ironman';
 console.log(vengador.charAt(0));    
 vengador = 150.555;
 console.log(vengador.toFixed(2));
-
