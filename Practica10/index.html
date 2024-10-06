@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información del Sistema en el Navegador</title>
+</head>
+<body>
+  <h1>Información del Sistema en el Navegador</h1>
+  <div id="systemInfo"></div>
+
+  <script src="index.js"></script>
+  <script>
+    // Obtener información del sistema disponible desde el navegador
+    const systemInfoDiv = document.getElementById('systemInfo');
+
+    // Información básica del navegador
+    const platform = navigator.platform;
+    const userAgent = navigator.userAgent;
+    const language = navigator.language;
+
+    // Información adicional (no es igual que Node.js, pero es lo que se puede obtener)
+    const cores = navigator.hardwareConcurrency || 'Desconocido'; // Número de núcleos de CPU (si está disponible)
+
+    systemInfoDiv.innerHTML = `
+      <p><strong>Plataforma:</strong> ${platform}</p>
+      <p><strong>User Agent:</strong> ${userAgent}</p>
+      <p><strong>Idioma:</strong> ${language}</p>
+      <p><strong>Núcleos de CPU:</strong> ${cores}</p>
+    `;
+  </script>
+</body>
+</html>
