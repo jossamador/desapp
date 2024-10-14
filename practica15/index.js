@@ -3,7 +3,7 @@ const fs = require('fs');
 const PUERTO = 3000;
  
 const server = http.createServer((req, res) => {
-    fs.readFile('./views/index.html', (err, data) => {
+    fs.readFile('./index.html', (err, data) => {
         if (err) {
             res.writeHead(404, {'Content-Type': 'text/html'});
             return res.end('404 Not Found');
