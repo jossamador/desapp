@@ -1,0 +1,113 @@
+/* Diseño general */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1d;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Cabecera */
+header {
+    background-color: #0b0c10;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: #66fcf1;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.content {
+    background-color: #0b0c10;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #45a29e;
+    border-radius: 5px;
+    background-color: #1f2833;
+    color: #f0f0f0;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #66fcf1;
+}
+
+button {
+    padding: 10px;
+    background-color: #45a29e;
+    color: #0b0c10;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #66fcf1;
+}
+
+/* Sección de artículo generado */
+#generatedContent {
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#generatedContent h3 {
+    color: #66fcf1;
+}
+
+#generatedContent p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #c5c6c7;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
